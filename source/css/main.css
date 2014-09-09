@@ -405,18 +405,18 @@ img { max-width: 100%; }
 .footer a:hover {
   color: #d2d2d2;
 }
-.footer .credits {
+.footer .credits, .footer .collaborates {
   border-bottom: 1px solid #494949;
   padding: 40px 0 10px;
 }
-.footer .credits li {
+.footer .credits li, .footer .collaborates li {
   list-style: none;
   display: inline;
   display: inline-block;
   font-size: 20px;
   min-width: 270px;
 }
-.footer .credits li p { margin: 30px auto; }
+.footer .credits li p, .footer .collaborates li p { margin: 30px auto; }
 .footer .social a{
   display: inline;
   display: inline-block;
