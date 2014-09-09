@@ -265,8 +265,9 @@ img { max-width: 100%; }
 .schedule-table {
   text-align: left;
   width: 50%;
-  float: left;
-  margin-bottom: 20px;
+  // float: left;
+  // margin-bottom: 20px;
+  margin: 0 auto;
 }
 .schedule-table th {
   font-size: 20px;
