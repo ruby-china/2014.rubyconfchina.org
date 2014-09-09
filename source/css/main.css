@@ -406,7 +406,7 @@ img { max-width: 100%; }
   color: #d2d2d2;
 }
 .footer .credits, .footer .collaborates {
-  border-bottom: 1px solid #494949;
+  // border-bottom: 1px solid #494949;
   padding: 40px 0 10px;
 }
 .footer .credits li, .footer .collaborates li {
@@ -417,6 +417,12 @@ img { max-width: 100%; }
   min-width: 270px;
 }
 .footer .credits li p, .footer .collaborates li p { margin: 30px auto; }
+.footer .collaborates{
+  border-bottom: 1px solid #494949;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 30px;
+}
 .footer .social a{
   display: inline;
   display: inline-block;
