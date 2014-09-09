@@ -370,7 +370,7 @@ img { max-width: 100%; }
   display: inline-block;
 }
 .venue .address h4 { margin: 0 0 10px; }
-.venue .address img { max-width: 220px; }
+.venue .address img { max-width: 260px; }
 .venue .address a { color: #fff; text-decoration: underline; }
 
 .footer {
@@ -924,9 +924,13 @@ img { max-width: 100%; }
   .speakers-list li { width: 50%; }
   .speakers-list li:nth-child(odd) { clear: left; }
   .venue .address {
+    margin-top: 160px;
     background-color: rgba(0,0,0,.2);
     padding: 10px;
     float: none;
+  }
+  .venue .address img {
+    display: none;
   }
 }
 
