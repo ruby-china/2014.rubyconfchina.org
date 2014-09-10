@@ -265,8 +265,9 @@ img { max-width: 100%; }
 .schedule-table {
   text-align: left;
   width: 50%;
-  float: left;
-  margin-bottom: 20px;
+  // float: left;
+  // margin-bottom: 20px;
+  margin: 0 auto;
 }
 .schedule-table th {
   font-size: 20px;
@@ -355,9 +356,9 @@ img { max-width: 100%; }
 
 .venue {
   background: #80798f url("/img/map.jpg") no-repeat center center;
-  height: 270px;
+  height: 340px;
   border: none;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 .venue .container {
 
@@ -370,7 +371,7 @@ img { max-width: 100%; }
   display: inline-block;
 }
 .venue .address h4 { margin: 0 0 10px; }
-.venue .address img { max-width: 220px; }
+.venue .address img { max-width: 260px; }
 .venue .address a { color: #fff; text-decoration: underline; }
 
 .footer {
@@ -924,9 +925,13 @@ img { max-width: 100%; }
   .speakers-list li { width: 50%; }
   .speakers-list li:nth-child(odd) { clear: left; }
   .venue .address {
+    margin-top: 160px;
     background-color: rgba(0,0,0,.2);
     padding: 10px;
     float: none;
+  }
+  .venue .address img {
+    display: none;
   }
 }
 
