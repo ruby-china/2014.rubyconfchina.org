@@ -214,16 +214,17 @@ img { max-width: 100%; }
 
 .hero {
   background-color: #2c3035;
-  background-image: url("/img/hero.jpg");
+  background-image: url("/img/banner.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
-  padding: 60px 0 40px 0;
+  padding: 40px 0 40px 0;
   margin: 0 auto;
+  height: 390px;
   color: white;
 }
-.hero > figure { margin-bottom: 55px; padding: 0 10px;}
+.hero > figure { margin-bottom: 42px; padding: 0 10px;}
 .hero > figure img { margin-left: 15px; }
 .hero h1 {
   font-size: 4em;
@@ -264,8 +265,9 @@ img { max-width: 100%; }
 .schedule-table {
   text-align: left;
   width: 50%;
-  float: left;
-  margin-bottom: 20px;
+  // float: left;
+  // margin-bottom: 20px;
+  margin: 0 auto;
 }
 .schedule-table th {
   font-size: 20px;
@@ -354,9 +356,9 @@ img { max-width: 100%; }
 
 .venue {
   background: #80798f url("/img/map.jpg") no-repeat center center;
-  height: 270px;
+  height: 340px;
   border: none;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 .venue .container {
 
@@ -369,7 +371,7 @@ img { max-width: 100%; }
   display: inline-block;
 }
 .venue .address h4 { margin: 0 0 10px; }
-.venue .address img { max-width: 220px; }
+.venue .address img { max-width: 260px; }
 .venue .address a { color: #fff; text-decoration: underline; }
 
 .footer {
@@ -460,7 +462,7 @@ img { max-width: 100%; }
 .btn {
   display: inline-block;
   padding: 15px 35px;
-  background-color: #EC2E52;
+  background-color: #e96b6c;
   color: #fff;
   font-size: 24px;
   font-weight: normal;
@@ -469,7 +471,7 @@ img { max-width: 100%; }
 }
 .btn:hover {
   color: #fff;
-  background-color: #e5744e;
+  background-color: #da5151;
 }
 
 .cta a { margin-bottom: 5px; }
@@ -923,9 +925,13 @@ img { max-width: 100%; }
   .speakers-list li { width: 50%; }
   .speakers-list li:nth-child(odd) { clear: left; }
   .venue .address {
+    margin-top: 160px;
     background-color: rgba(0,0,0,.2);
     padding: 10px;
     float: none;
+  }
+  .venue .address img {
+    display: none;
   }
 }
 

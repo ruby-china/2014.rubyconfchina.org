@@ -1,76 +1,91 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="zh-cn" class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <!-- Use title if it's in the page YAML frontmatter -->
-        <title><%= data.page.title || "HTML5 Boilerplate" %></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="zh-cn" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title><%= data.page.title || 'RubyConf China 2014' %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser
+  today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better
+  experience this site.</p>
+<![endif]-->
 
-        <header class="hero">
-            <figure><img src="/img/rubyconfchina-logo.png"/></figure>
-            <h1>RubyConf China</h1>
-            <h2>10 月 26 - 27 号，2013<br />北京，中国</h2>
-        </header>
+<header class="hero">
+  <figure><img src="/img/logo.png"/></figure>
+  <h1>RubyConf China</h1>
 
-        <%= yield %>
+  <h2>11 月 1 - 2 号，2014<br/>北京，中国</h2>
+</header>
 
-        <footer class="wrap footer">
-            <div class="container">
-                <header>
-                    <h2>主办方和组织者</h2>
-                </header>
+<%= yield %>
 
-                <ul class="credits">
-                    <li>
-                        <a href="https://pragmatic.ly"><i class="icon-pragmatic-ly"></i></a>
-                        <p><a href="//twitter.com/yedinding">@yedingding</a></p>
-                    </li>
-                    <li>
-                        <a href="http://ruby-china.org"><i class="icon-ruby-china"></i></a>
-                        <p><a href="//twitter.com/lgn21st">@lgn21st</a></p>
-                    </li>
-                    <li>
-                        <a href="http://knewone.com"><i class="icon-knewone"></i></a>
-                        <p><a href="//twitter.com/jasl9187">@jasl9187</a></p>
-                    </li>
-                </ul>
+<footer class="wrap footer">
+  <div class="container">
+    <header>
+      <h2>主办方和组织者</h2>
+    </header>
 
-                <div class="social">
-                    <a href="https://twitter.com/ruby_china"><i class="icon-twitter"></i></a>
-                    <a href="http://weibo.com/ruby_china"><i class="icon-weibo"></i></a>
-                </div>
+    <ul class="credits">
+      <li>
+        <a href="https://pragmatic.ly"><i class="icon-pragmatic-ly"></i></a>
 
-                <p class="copyright">© COPYRIGHT RUBYCONF CHINA 2013, WEBSITE BY <a href="//beenhero.com">BIN HE</a></p>
-            </div>
-        </footer>
+        <p><a href="//twitter.com/yedinding">@yedingding</a></p>
+      </li>
+      <li>
+        <a href="http://ruby-china.org"><i class="icon-ruby-china"></i></a>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <p><a href="//twitter.com/lgn21st">@lgn21st</a></p>
+      </li>
+      <li>
+        <a href="http://knewone.com"><i class="icon-knewone"></i></a>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-33952565-1'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
+        <p><a href="//twitter.com/jasl9187">@jasl9187</a></p>
+      </li>
+    </ul>
+
+    <div class="social">
+      <a href="https://twitter.com/ruby_china"><i class="icon-twitter"></i></a>
+      <a href="http://weibo.com/ruby_china"><i class="icon-weibo"></i></a>
+    </div>
+
+    <p class="copyright">© COPYRIGHT RUBYCONF CHINA 2014, WEBSITE BY <a href="//beenhero.com">BIN HE</a></p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  var _gaq = [
+    ['_setAccount', 'UA-33952565-1'],
+    ['_trackPageview']
+  ];
+  (function (d, t) {
+    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s)
+  }(document, 'script'));
+</script>
+</body>
 </html>
