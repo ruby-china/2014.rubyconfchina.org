@@ -1,0 +1,960 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  text-align: center;
+  font-family: Helvetica, Arial, 'Hiragino Sans GB', STHeiti, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: 320px;
+}
+
+a {
+  color: #2c3035;
+  text-decoration: none;
+}
+a:hover{
+  color: #e5744e;
+}
+
+img { max-width: 100%; }
+
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/*
+ * Global Nav, will be sticky when scrolling down.
+ */
+
+.global-nav {
+  background-color: #fff;
+  padding: 10px 0;
+  position: relative;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+.global-nav ul { margin: 0; padding: 0; }
+.global-nav ul li {
+  display: inline;
+}
+.global-nav ul li a {
+  padding: 10px 3%;
+  font-size: 20px;
+  color: #777;
+  text-decoration: none;
+}
+.global-nav ul li a.btn {
+  color: #fff;
+  margin-left: 3%;
+}
+.global-nav ul li a.btn:hover {
+  color: #fff;
+  background-color: #;
+}
+.global-nav ul li a:hover {
+  color: #e5744e;
+}
+.global-nav ul li.active a {
+  background-color: #555;
+  color: #eee;
+}
+
+.speakers-list {
+  margin: 0;
+  padding: 0;
+}
+.speakers-list li {
+  list-style: none;
+  float: left;
+  width: 25%;
+  margin-bottom: 40px;
+}
+.speakers-list figure img {
+  width: 80%;
+  max-width: 100%;
+}
+.speakers-list h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #EC2E52;
+  margin: 8px 0 0;
+}
+.speakers-list p {
+  font-size: .9em;
+  color: #777;
+  margin: 0;
+}
+.speakers-list p a {
+  color: #777;
+}
+.speakers-list p a:hover {
+  color: #e5744e;
+}
+
+.wrap {
+  padding: 60px 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #F5F5F5;
+  background-image: -moz-linear-gradient(top, #EEE 0%, #F5F5F5 15%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEE), color-stop(15%,#F5F5F5));
+  background-image: -webkit-linear-gradient(top, #EEE 0%,#F5F5F5 15%);
+  background-image: -o-linear-gradient(top, #EEE 0%,#F5F5F5 15%);
+  background-image: -ms-linear-gradient(top, #EEE 0%,#F5F5F5 15%);
+  background-image: linear-gradient(to bottom, #EEE 0%,#F5F5F5 15%);
+}
+.wrap header {
+  margin-bottom: 60px;
+  font-size: 1.2em;
+  color: #555;
+}
+.wrap header h2 {
+  color: #444;
+}
+.wrap > p {
+  color: #888;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.hero {
+  background-color: #2c3035;
+  background-image: url("/img/banner.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  padding: 40px 0 40px 0;
+  margin: 0 auto;
+  height: 390px;
+  color: white;
+}
+.hero > figure { margin-bottom: 42px; padding: 0 10px;}
+.hero > figure img { margin-left: 15px; }
+.hero h1 {
+  font-size: 4em;
+  line-height: 1.2;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  margin: .55em 0;
+  display: none;
+  /*color: rgba(255,255,255,.75);*/
+}
+
+.hero h2 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 220px;
+  padding: 5px 0;
+  margin: 20px auto;
+  /*color: rgba(255,255,255,.75);*/
+}
+
+.about > p {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: left;
+  color: #888;
+  font-size: 18px;
+  line-height: 28px;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+/* schedule table */
+.schedule-table {
+  text-align: left;
+  width: 50%;
+  // float: left;
+  // margin-bottom: 20px;
+  margin: 0 auto;
+}
+.schedule-table th {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.schedule-table th small {
+  padding-left: 10px;
+  font-size: 12px;
+  color: #888;
+}
+.schedule-table td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+.schedule-table .time {
+  font-size: 13px;
+  width: 100px;
+  color: #888;
+}
+
+.schedule-table .rowspan{
+  width: 16px;
+  font-size: 13px;
+  color: #888;
+}
+
+.sponsors > p {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 10px;
+  color: #888;
+  font-size: 16px;
+  line-height: 28px;
+  text-shadow: 1px 1px 0 #fff;
+}
+.sponsors ul { list-style: none; margin: 0 0 60px; padding: 0; }
+.sponsors li {
+  display: inline;
+  display: inline-block;
+  margin: 20px;
+}
+.sponsors li img {
+  max-height: 100px;
+  max-width: 240px;
+}
+.sponsors h4 {
+  display: inline;
+  display: inline-block;
+  color: #a8a8a8;
+  font-size: 20px;
+  font-weight: normal;
+  position: relative;
+  padding: 3px 5px;
+  margin: 0;
+}
+.sponsors-platinum li img {
+  max-height: 120px;
+  max-width: 360px;
+}
+.sponsors-silver li img {
+  max-width: 200px;
+}
+.sponsors-bronze li img, .sponsors-media li img {
+  max-height: 60px;
+}
+/*.sponsors-platinum li h4 {
+  background-color: #f2f2f2;
+  color: #bbb;
+}
+
+.sponsors-gold li h4 {
+  background-color: #F8E39F;
+  color: #D1B387;
+}
+
+.sponsors-silver li h4 {
+  background-color: silver;
+  color: #eee;
+}
+.sponsors-bronze li h4 {
+  background-color: #B39880;
+  color: #F5EEE8;
+}*/
+
+.venue {
+  background: #80798f url("/img/map.jpg") no-repeat center center;
+  height: 340px;
+  border: none;
+  padding-top: 80px;
+}
+.venue .container {
+
+}
+.venue .address {
+  float: left;
+  text-align: left;
+  color: #fff;
+  display: inline;
+  display: inline-block;
+}
+.venue .address h4 { margin: 0 0 10px; }
+.venue .address img { max-width: 260px; }
+.venue .address a { color: #fff; text-decoration: underline; }
+
+.footer {
+  color: #666;
+  border: none;
+  background: #2c3035;
+  padding: 80px 0 20px;
+}
+.footer .container { max-width: 820px; }
+.footer header {
+  position: relative;
+  border-bottom: 1px solid #494949;
+  margin: 0;
+}
+.footer header h2 {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  color: #666;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 30px;
+  width: 220px;
+  margin: 0 0 0 -110px;
+  background-color: #2c3035;
+}
+.footer a {
+  color: #666;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #d2d2d2;
+}
+.footer .credits {
+  border-bottom: 1px solid #494949;
+  padding: 40px 0 10px;
+}
+.footer .credits li {
+  list-style: none;
+  display: inline;
+  display: inline-block;
+  font-size: 20px;
+  min-width: 270px;
+}
+.footer .credits li p { margin: 30px auto; }
+.footer .social a{
+  display: inline;
+  display: inline-block;
+  line-height: 35px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: 40px 20px 10px;
+  -webkit-transition: background-color 0.15s linear;
+     -moz-transition: background-color 0.15s linear;
+       -o-transition: background-color 0.15s linear;
+          transition: background-color 0.15s linear;
+}
+.footer .social a:hover {
+  background-color: #d2d2d2;
+}
+.footer .copyright {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  *margin-right: .3em;
+  line-height: 40px;
+  vertical-align: text-top;
+  background-image: url("/img/sprite.png");
+  background-position: 40px 40px;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+}
+.icon-ruby-china { background-position: 0 0; width: 90px; height: 80px; }
+.icon-pragmatic-ly { background-position: 0 -80px; width: 270px; height: 80px; }
+.icon-knewone { background-position: 0 -160px; width: 230px; height: 80px; }
+.icon-twitter { background-position: -90px 0; }
+.icon-weibo { background-position: -130px 0; }
+
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #e96b6c;
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #da5151;
+}
+
+.cta a { margin-bottom: 5px; }
+
+.cta small {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 5px;
+}
+
+.marker {
+  height: 1px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-left: -60px;
+  top: 50%;
+  margin-top: -1px;
+  background: #EC2E52;
+}
+
+
+.ad-placeholder {
+  display: inline-block;
+  border: 3px dashed #ddd;
+  max-width: 294px;
+  width: 100%;
+  height: 74px;
+  font-size: 28px;
+  line-height: 80px;
+  color: #ccc;
+  margin-bottom: 1em;
+}
+.ad-placeholder:hover {
+  border-color: #e5744e;
+}
+
+/* Affix */
+.affix {
+  position: fixed;
+  top: 0;
+  z-index: 1099;
+  width: 100%;
+  background-color: rgba(255,255,255,.95);
+}
+
+
+/* Timeline for schedule */
+.cbp_tmtimeline {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  text-align: left; }
+
+/* The line */
+.cbp_tmtimeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #d7cded;
+  left: 20%;
+  margin-left: -10px; }
+
+.cbp_tmtimeline > li {
+  position: relative; }
+
+/* The date/time */
+.cbp_tmtimeline > li .cbp_tmtime {
+  opacity: 1;
+  /*wait for schedule*/
+  display: block;
+  width: 25%;
+  padding-right: 130px;
+  position: absolute;
+  box-sizing: border-box; }
+
+.cbp_tmtimeline > li .cbp_tmtime span {
+  display: block;
+  text-align: right; }
+
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+  font-size: 0.9em;
+  color: #c4c2c8; }
+
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+  font-size: 2.9em;
+  color: #8977af; }
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+  color: #9f8bcc; }
+
+/* Right content */
+.cbp_tmtimeline > li .cbp_tmlabel {
+  margin: 0 0 15px 25%;
+  background: #8977af;
+  color: #fff;
+  padding: 2em;
+  font-size: 1.2em;
+  line-height: 1.4;
+  position: relative;
+  border-radius: 5px; }
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+  background: #9f8bcc; }
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 {
+  font-weight: normal;
+  margin: 0; }
+
+.cbp_tmtimeline > li .cbp_tmlabel p {
+  margin: 8px 0; }
+
+.cbp_tmtimeline > li .cbp_tmlabel a:hover {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.75); }
+
+.cbp_tmtimeline > li .cbp_tmlabel .speaker-info {
+  color: #443a59;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #d8ceed;
+  border-top-color: rgba(255, 255, 255, 0.4); }
+
+/* The triangle */
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #8977af;
+  border-width: 10px;
+  top: 20px; }
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+  border-right-color: #9f8bcc; }
+
+/* The icons */
+.cbp_tmtimeline > li .cbp_tmicon {
+  width: 60px;
+  height: 60px;
+  font-size: 1.4em;
+  line-height: 40px;
+  position: absolute;
+  background: #9f8bcc;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #d7cded;
+  text-align: center;
+  left: 20%;
+  top: 0;
+  margin: 0 0 0 -35px; }
+
+.cbp_tmtimeline > li .cbp_tmicon > img {
+  border-radius: 50%;
+  vertical-align: inherit; }
+
+@media screen and (max-width: 65.375em) {
+  .cbp_tmtimeline > li .cbp_tmtime span:last-child {
+    font-size: 1.5em; } }
+@media screen and (max-width: 47.2em) {
+  .cbp_tmtimeline:before {
+    display: none; }
+
+  .cbp_tmtimeline > li .cbp_tmtime {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0; }
+
+  .cbp_tmtimeline > li .cbp_tmtime span {
+    text-align: left; }
+
+  .cbp_tmtimeline > li .cbp_tmlabel {
+    margin: 0 0 30px 0;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 95%; }
+
+  .cbp_tmtimeline > li .cbp_tmlabel:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #8977af;
+    top: -20px; }
+
+  .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+    border-right-color: transparent;
+    border-bottom-color: #9f8bcc; }
+
+  .cbp_tmtimeline > li .cbp_tmicon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -75px 5px 0 0px; } }
+
+/* Sponsors Details Page */
+#sponsors-details .container {
+  max-width: 1300px;
+}
+#sponsors-details ul, #sponsors-details h4 {
+  text-align: left;
+}
+#sponsors-details h4 {
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+#sponsors-details ul li {
+  width: 25%;
+  margin: 0;
+  padding: 20px;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#sponsors-details li > a {
+  display: block;
+  min-height: 80px;
+  vertical-align: bottom;
+}
+#sponsors-details .sponsors-platinum ul li {
+  width: 50%;
+}
+#sponsors-details .sponsors-gold li a {
+  display: block;
+  min-height: 100px;
+}
+#sponsors-details .locomote img { margin-top: 20px; }
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.align-right { text-align: right; }
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media (max-width: 1680px) {
+  .hero { background-size: inherit; }
+}
+
+@media (max-width: 1300px) {
+  #sponsors-details ul li { width: 50%; }
+}
+
+@media (max-width: 960px) {
+  .sponsors ul li:first-child { display: block; }
+  #sponsors-details .container { width: 100%; }
+  #sponsors-details .sponsors-platinum ul li { width: 100%; }
+  #sponsors-details ul li:first-child { display: inline-block;}
+  .speakers-list li { font-size: .8em; }
+  .schedule-table { float: none; width: 100%; }
+}
+
+@media (max-width: 640px) {
+  .global-nav ul li a { font-size: 16px; padding: 5px;}
+  #sponsors-details ul li { max-width: none !important; width: 100%; }
+  .speakers-list li { width: 50%; }
+  .speakers-list li:nth-child(odd) { clear: left; }
+  .venue .address {
+    margin-top: 160px;
+    background-color: rgba(0,0,0,.2);
+    padding: 10px;
+    float: none;
+  }
+  .venue .address img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .global-nav ul li a.btn {
+    display: block;
+    margin: 10px auto 0;
+    max-width: 300px;
+  }
+  .sponsors ul { margin: 0 0 20px; border-top: 1px solid #ddd; }
+  .hero > figure img { margin-left: auto; }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  [class^="icon-"],
+  [class*=" icon-"] {
+    background-image: url("/img/sprite@2x.png");
+    -moz-background-size: 400px 400px;
+    -ie-background-size: 400px 400px;
+    -o-background-size: 400px 400px;
+    -webkit-background-size: 400px 400px;
+    background-size: 400px 400px;
+  }
+}
