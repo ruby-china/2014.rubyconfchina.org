@@ -287,7 +287,6 @@ img { max-width: 100%; }
 }
 .schedule-table .time {
   font-size: 13px;
-  width: 100px;
   color: #888;
 }
 
@@ -295,6 +294,35 @@ img { max-width: 100%; }
   width: 16px;
   font-size: 13px;
   color: #888;
+}
+
+.events{
+  margin-top: 20px;
+}
+
+.events .apply {
+  width: 42px;
+}
+
+.events .btn {
+  padding: 5px;
+  font-size: 1em;
+}
+
+.events .title{
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.events .time{
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.events .description{
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .sponsors > p {
